@@ -1,0 +1,125 @@
+
+   
+<html>
+    <head>
+        <title>JOB PREDICTION</title>
+        <style>
+            body {
+            margin: 0;
+            padding: 0;
+            
+            
+            
+              background-image: url('https://wallpaperaccess.com/full/2053097.png');
+              background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative
+            }
+
+            
+            
+input[type=number], select {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=text], select {
+  width: 40%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 40%;
+  background-color:#1f0538;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #4d1385;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+            
+        </style>
+    </head>
+     <body>
+
+     <center>
+        
+            <h2><u>Enter Details to Predict employee job</u></h2>
+            <form method="POST" action="/input">
+                <label for="sl"><b>ENTER THE SATISFACTION LEVEL </b> </label><br>
+                <input id = "sl" type="text" name="sl" placeholder="Enter the Satisfaction Level" required><br><br>
+                
+
+                <label for="le"><b>ENTER THE Last Evaluation </b> </label><br>
+                <input id = "le" type="text" name="le" placeholder="Enter the Last Evaluation" required><br><br>
+                
+                <label for="np"><b>ENTER THE NUMBER OF PROJECT </b> </label><br>
+                <input id = "np" type="text" name="np" placeholder="Enter the  Number of Project" required><br><br>
+
+                <label for="am"><b>ENTER THE AVERAGE MONTH </b> </label><br>
+                <input id = "am" type="text" name="am" placeholder="Enter the Average month" required><br><br>
+
+                <!-- <label for="le"><b>ENTER THE Last Evaluation </b> </label><br>
+                <input id = "le" type="text" name="le" placeholder="Enter the Last Evaluation" required><br><br> -->
+
+                <label for="ts"><b>ENTER THE time spend</b> </label><br>
+                <input id = "ts" type="text" name="ts" placeholder="Enter the Time Spen" required><br><br>
+
+                <label for="wa"><b>ENTER THE Work Accident </b> </label><br>
+                <input id = "wa" type="text" name="wa" placeholder="Enter the Work Accident" required><br><br>
+
+                <label for="pl"><b>ENTER THE Promotion Last 5 years </b> </label><br>
+                <input id = "pl" type="text" name="pl" placeholder="Enter the Last Evaluation" required><br><br>
+                
+
+                <label for="dp"><b>SELECT THE DEPARTMENT</b> </label>
+                <br>
+                    <select name="dp">
+                    <option value=1>IT</option>
+                    <option value=2>RandD</option>
+                    <option value=3>Accounting</option>
+                    <option value=4>Hr</option>
+                    <option value=5>Management</option>
+                    <option value=6>Product management</option>
+                    <option value=7>sales</option>
+                    <option value=7>support</option>
+                    <option value=7>technical</option> 
+                    </select><br><br>
+                <label for="sa"><b>ENTER THE SALARY  </b></label><br>
+                    <select name="sa">
+                    <option value=1>high</option>
+                    <option value=2>low</option>
+                    <option value=3>medium</option>
+                       
+                </select>  <br><br>
+                
+                <input type="submit" value="SUBMIT">
+
+                
+            </form>
+        </center>
+    </body>
+</html>
